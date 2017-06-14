@@ -5,14 +5,14 @@
         <jsp:param name="title" value="Please Log In" />
     </jsp:include>
 
-    <link href="css/bootstrap.css/bootstrap.min.css." rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <div class="container">
-        <h1>Please Log In</h1>
+        <h1>Please Log In Friend</h1>
         <form action="/login" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
