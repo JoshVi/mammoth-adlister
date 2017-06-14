@@ -23,6 +23,7 @@ public class Ad {
     }
 
     public long getId() {
+
         return id;
     }
 
