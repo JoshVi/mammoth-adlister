@@ -17,6 +17,7 @@
             <h2>${ad.title}</h2>
             <p>${ad.description}</p>
             <p>${ad.price}</p>
+            <a href="/ads/show?id=${ad.id}">link</a>
         </div>
     </c:forEach>
 </div>
