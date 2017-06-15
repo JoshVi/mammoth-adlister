@@ -2,8 +2,16 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Ready to Sell? Create a New Ad Here." />
+
+        <jsp:param name="title" value="PRESTIGE - Create New Ad" />
     </jsp:include>
+
+    <jsp:include page="/WEB-INF/partials/navbar.jsp">
+        <jsp:param name="title" value="PRESTIGE - Create New Ad" />
+    </jsp:include>
+
+
+
 
 </head>
 <body>

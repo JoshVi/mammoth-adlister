@@ -1,6 +1,7 @@
 body {
-    background-image: url("/prestige_img/openroad.jpg");
+    background-image: url("/prestige_img/greendrive.jpg");
     background-size: cover;
-    font-family: 'DejaVu Sans Mono', monospace;
+    font-family: "Playfair Display", monospace;
     text-align: center;
+    color: white;
 }
