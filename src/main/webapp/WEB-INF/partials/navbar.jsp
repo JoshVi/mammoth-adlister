@@ -6,8 +6,10 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
 
-            <form class="navbar-left"></form>
-            <input name="search" type="text" id="search" placeholder="Search">
+            <form style="margin-top: 1em"; class="nav navbar-nav navbar-left" >
+            <input type="text" name="search"  id="search" placeholder="Search">
+            </form>
+
 
             <li><a href="/ads">View All Ads</a></li>
             <li><a href="/ads/create">Create New Ad</a></li>
