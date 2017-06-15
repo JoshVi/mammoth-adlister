@@ -26,4 +26,18 @@ public class AdsIndexServlet extends HttpServlet {
         request.setAttribute("ads", ads);
         request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
     }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String id = request.getParameter("id");
+        List<Ad> ads = DaoFactory.getAdsDao().search(id);
+
+        for (Ad ad : ads) {
+            Float price = ad.getPrice();
+            NumberFormat formatter = NumberFormat.getCurrencyInstance();
+            ad.setFormattedPrice(formatter.format(price));
+        }
+        request.setAttribute("ads", ads);
+        request.getRequestDispatcher("/WEB-INF/ads/index.jsp").forward(request, response);
+
+    }
 }
