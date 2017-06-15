@@ -3,7 +3,7 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Viewing All The Ads" />
+        <jsp:param name="title" value="PRESTIGE - All Ads" />
     </jsp:include>
 </head>
 <body>
@@ -13,11 +13,11 @@
 
     <h1>All Cars for Sale!</h1>
 
-    <div class="col-md-9">
+    <div class="col-md-12">
 
         <div class="row carousel-holder">
 
-            <div class="col-md-12">
+            <div class="col-md-12" style="padding-bottom: 3em">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
