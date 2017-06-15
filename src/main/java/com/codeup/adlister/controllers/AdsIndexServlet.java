@@ -28,8 +28,8 @@ public class AdsIndexServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String id = request.getParameter("id");
-        List<Ad> ads = DaoFactory.getAdsDao().search(id);
+        String search = request.getParameter("search");
+        List<Ad> ads = DaoFactory.getAdsDao().search(search);
 
         for (Ad ad : ads) {
             Float price = ad.getPrice();
