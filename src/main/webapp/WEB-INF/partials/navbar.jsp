@@ -6,7 +6,7 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
 
-            <form style="margin-top: 1em"; class="nav navbar-nav navbar-left" >
+            <form style="margin-top: 1em"; action="/ads" class="nav navbar-nav navbar-left" >
             <input type="text" name="search"  id="search" placeholder="Search">
             </form>
 
