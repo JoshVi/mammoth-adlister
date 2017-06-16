@@ -2,6 +2,7 @@ package com.codeup.adlister.controllers;
 
 import com.codeup.adlister.dao.DaoFactory;
 import com.codeup.adlister.models.Ad;
+import com.codeup.adlister.models.User;
 import com.sun.jdi.FloatValue;
 
 import javax.servlet.ServletException;
@@ -23,9 +24,9 @@ public class CreateAdServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Ad ad;
-        ad = new Ad(
-            1, // for now we'll hardcode the user id
+        User user = (User) request.getSession().getAttribute("user");
+        Ad ad = new Ad(
+            user.getId(),
             request.getParameter("title"),
             request.getParameter("description"),
                 Float.parseFloat(request.getParameter("price"))
