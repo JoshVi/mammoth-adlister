@@ -3,13 +3,26 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Welcome to my site!" />
+        <jsp:param name="title" value="Welcome to PRESTIGE!" />
     </jsp:include>
+<style>
+    body {
+        background-image: url("prestige_img/whitecovertible.jpg");
+        background-size: cover;
+        color: white;
+    }
+    #indexh1 {
+        margin-top:2em;
+    }
+</style>
+
+
+
 </head>
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <div class="container">
-        <h1>Welcome to the Adlister!</h1>
+        <h1 id="indexh1">Welcome to PRESTIGE, Supercar-Enthusiasts!</h1>
     </div>
 </body>
 </html>

@@ -2,8 +2,17 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Create a new Ad" />
+
+        <jsp:param name="title" value="PRESTIGE - Create New Ad" />
     </jsp:include>
+
+    <jsp:include page="/WEB-INF/partials/navbar.jsp">
+        <jsp:param name="title" value="PRESTIGE - Create New Ad" />
+    </jsp:include>
+
+
+
+
 </head>
 <body>
     <div class="container">

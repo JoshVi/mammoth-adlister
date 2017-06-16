@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "controllers.LoginServlet", urlPatterns = "/login")
@@ -31,14 +32,17 @@ public class LoginServlet extends HttpServlet {
             return;
         }
 
-
-        boolean validAttempt = Password.check(password, user.getPassword());
+        HttpSession session = request.getSession();
+        boolean validAttempt  = Password.check(password, user.getPassword());
 
         if (validAttempt) {
-            request.getSession().setAttribute("user", user);
+            session.setAttribute("user", user);
+            session.setAttribute("isLoggedIn", true);
             response.sendRedirect("/profile");
         } else {
+            session.setAttribute("isLoggedIn", false);
             response.sendRedirect("/login");
         }
     }
 }
+
