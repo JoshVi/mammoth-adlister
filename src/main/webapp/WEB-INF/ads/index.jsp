@@ -59,7 +59,7 @@
                 <img src="../../prestige_img/Bugatti.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">${ad.formattedPrice}</h4>
-                    <h4><a href="#">${ad.title}</a>
+                    <h4 class="h4"><a href="#">${ad.title}</a>
                     </h4>
                     <p>${ad.description}</p>
                 </div>
@@ -78,15 +78,6 @@
 
 
 
-
-
-
-        <%--<div class="col-md-4">--%>
-            <%--<h2>${ad.title}</h2>--%>
-            <%--<p>${ad.description}</p>--%>
-            <%--<p>${ad.price}</p>--%>
-            <%--<a href="/ads/show?id=${ad.id}">link</a>--%>
-        <%--</div>--%>
     </c:forEach>
 </div>
 <script src="../../js/jquery.js"></script>

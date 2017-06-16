@@ -9,7 +9,10 @@
    <style>
        body{
            color: white;
+           background-image: url(../prestige_img/ferrari2.jpg);
+           background-size: cover;
        }
+
 
        #red {
            color: red;

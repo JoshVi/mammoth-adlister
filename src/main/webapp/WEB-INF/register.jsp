@@ -5,12 +5,7 @@
         <jsp:param name="title" value="PRESTIGE: Register For Our Site!" />
     </jsp:include>
 
-    <style>
-        body{
-            background-image: url("../prestige_img/whitecars.jpg");
-            background-size: cover;
-        }
-    </style>
+    
 
 
 </head>
