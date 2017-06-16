@@ -11,6 +11,9 @@
         background-size: cover;
 
     }
+    #h1{
+        margin-top: 2em;
+    }
 
 </style>
 
@@ -19,7 +22,7 @@
 <body>
     <jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <div class="container">
-        <h1>Please Log In</h1>
+        <h1 id="h1">Please Log In</h1>
         <form action="/login" method="POST">
             <div class="form-group-sm">
                 <%--class="form-group"--%>
