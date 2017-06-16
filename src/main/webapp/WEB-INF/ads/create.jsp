@@ -10,7 +10,12 @@
         <jsp:param name="title" value="PRESTIGE - Create New Ad" />
     </jsp:include>
 
-
+<style>
+    body{
+        background-image: url("../prestige_img/orangelamb.jpg");
+        background-size: cover;
+    }
+</style>
 
 
 </head>

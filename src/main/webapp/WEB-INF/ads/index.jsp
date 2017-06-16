@@ -54,13 +54,13 @@
             <div class="thumbnail">
                 <img src="../../prestige_img/Bugatti.jpg" alt="">
                 <div class="caption">
-                    <h4 class="pull-right">${ad.formattedPrice}</h4>
+                    <h4>${ad.formattedPrice}</h4>
                     <h4><a href="/ads/show?id=${ad.id}">${ad.title}</a>
                     </h4>
                     <p>${ad.description}</p>
                 </div>
                 <div class="ratings">
-                    <p class="pull-right">X reviews</p>
+                    <p>X reviews</p>
                     <p>
                         <span class="glyphicon glyphicon-star"></span>
                         <span class="glyphicon glyphicon-star"></span>
