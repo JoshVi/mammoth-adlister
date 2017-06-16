@@ -13,6 +13,7 @@
 
             <li><a href="/ads">View All Ads</a></li>
             <li><a href="/ads/create">Create New Ad</a></li>
+            <li><a href="/register">Register</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>
