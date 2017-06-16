@@ -22,6 +22,7 @@
 
             <c:if test='${sessionScope.isLoggedIn}'>
                 <li><a href="/ads/create">Create New Ad</a></li>
+                <li><a href="/profile?id=${sessionScope.user.id}">My Profile</a></li>
                 <li><a href="/logout">Logout</a></li>
                  </c:if>
 
