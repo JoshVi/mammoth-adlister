@@ -2,7 +2,7 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="PRESIGE: Your Profile" />
+        <jsp:param name="title" value="PRESTIGE: Your Profile" />
     </jsp:include>
 
    <style>
@@ -23,7 +23,19 @@
         <h2>Here are your current advertisements:</h2>
 
 
+
+
+    <div >Your Information
+
     </div>
+
+
+
+    </div>
+
+
+
+
 
 </body>
 </html>
