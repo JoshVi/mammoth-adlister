@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Ad</title>
+    <jsp:include page="/WEB-INF/partials/head.jsp">
+        <jsp:param name="title" value="PRESTIGE - All Ads" />
+    </jsp:include>
 </head>
 <body>
+<jsp:include page="/WEB-INF/partials/navbar.jsp" />
+
 <div class="col-sm-4 col-lg-4 col-md-4">
     <div class="thumbnail">
         <img src="../../prestige_img/Bugatti.jpg" alt="">
@@ -18,8 +22,6 @@
             <h4 class="pull-right">${ad.formattedPrice}</h4>
             <h4><a href="/ads/show?id=${ad.id}">${ad.title}</a>
             </h4>
-            <p>Posted by ${user.username}</p>
-            <p>Contact at ${user.email}</p>
 
             <p>${ad.description}</p>
         </div>
@@ -33,6 +35,8 @@
                 <span class="glyphicon glyphicon-star-empty"></span>
             </p>
         </div>
+        <p>Posted by ${user.username}</p>
+        <p>Contact at ${user.email}</p>
     </div>
 </div>
 </h1>
