@@ -47,7 +47,7 @@
                 <div class="thumbnail">
                     <img src="../prestige_img/huracan.jpg" alt="">
                     <div class="caption">
-                        <h4 class="pull-right"><c:out value="${ad.price}" /></h4>
+                        <h4 class="pull-right"><c:out value="${ad.formattedPrice}" /></h4>
                         <h4><a href="#"><p><c:out value="${ad.title}" /></a>
                         </h4>
                         <p><c:out value="${ad.description}" /></p>

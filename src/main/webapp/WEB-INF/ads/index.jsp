@@ -47,10 +47,6 @@
         </div>
     </div>
 
-
-
-
-
     <c:forEach var="ad" items="${ads}">
 
 
@@ -59,7 +55,7 @@
                 <img src="../../prestige_img/Bugatti.jpg" alt="">
                 <div class="caption">
                     <h4 class="pull-right">${ad.formattedPrice}</h4>
-                    <h4 class="h4"><a href="#">${ad.title}</a>
+                    <h4><a href="/ads/show?id=${ad.id}">${ad.title}</a>
                     </h4>
                     <p>${ad.description}</p>
                 </div>
@@ -75,9 +71,6 @@
                 </div>
             </div>
         </div>
-
-
-
     </c:forEach>
 </div>
 <script src="../../js/jquery.js"></script>
