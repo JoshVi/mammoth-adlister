@@ -68,6 +68,8 @@ public class MySQLAdsDao implements Ads {
             e.printStackTrace();
         }
         return null;
+
+
     }
 
     private Ad extractAd(ResultSet rs) throws SQLException {
