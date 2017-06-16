@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.NumberFormat;
 import java.util.List;
 
 @WebServlet(name = "controllers.ViewProfileServlet", urlPatterns = "/profile")
@@ -22,8 +23,14 @@ public class ViewProfileServlet extends HttpServlet {
         long id = Long.parseLong(request.getParameter("id"));
         User user = DaoFactory.getUsersDao().findById(id);
         List<Ad> ads = DaoFactory.getAdsDao().findByUserId(id);
+        for (Ad ad : ads) {
+            Float price = ad.getPrice();
+            NumberFormat formatter = NumberFormat.getCurrencyInstance();
+            ad.setFormattedPrice(formatter.format(price));
+        }
         request.setAttribute("ads", ads);
         request.setAttribute("user", user);
         request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
     }
 }
+
