@@ -18,6 +18,9 @@
             <h4 class="pull-right">${ad.formattedPrice}</h4>
             <h4><a href="/ads/show?id=${ad.id}">${ad.title}</a>
             </h4>
+            <p>Posted by ${user.username}</p>
+            <p>Contact at ${user.email}</p>
+
             <p>${ad.description}</p>
         </div>
         <div class="ratings">
