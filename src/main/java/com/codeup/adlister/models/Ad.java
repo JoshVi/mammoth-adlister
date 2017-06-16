@@ -6,6 +6,7 @@ public class Ad {
     private String title;
     private String description;
     private Float price;
+    private String formattedPrice;
 
     public Ad(long id, long userId, String title, String description, Float price) {
         this.id = id;
@@ -61,5 +62,13 @@ public class Ad {
 
     public void setPrice(Float price) {
         this.price = price;
+    }
+
+    public String getFormattedPrice() {
+        return formattedPrice;
+    }
+
+    public void setFormattedPrice(String formattedPrice) {
+        this.formattedPrice = formattedPrice;
     }
 }

@@ -58,7 +58,7 @@
             <div class="thumbnail">
                 <img src="../../prestige_img/Bugatti.jpg" alt="">
                 <div class="caption">
-                    <h4 class="pull-right">$${ad.price}</h4>
+                    <h4 class="pull-right">${ad.formattedPrice}</h4>
                     <h4><a href="#">${ad.title}</a>
                     </h4>
                     <p>${ad.description}</p>
