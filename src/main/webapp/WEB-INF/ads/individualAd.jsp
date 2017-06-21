@@ -24,6 +24,8 @@
             </h4>
 
             <p>${ad.description}</p>
+            <p>Posted by ${user.username}</p>
+            <p>Contact at ${user.email}</p>
         </div>
         <div class="ratings">
             <p>X reviews</p>
@@ -35,8 +37,7 @@
                 <span class="glyphicon glyphicon-star-empty"></span>
             </p>
         </div>
-        <p>Posted by ${user.username}</p>
-        <p>Contact at ${user.email}</p>
+
     </div>
 </div>
 </h1>
